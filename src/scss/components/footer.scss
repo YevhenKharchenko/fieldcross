@@ -1,5 +1,5 @@
 .footer {
-  background: #ff9f1c;
+  background: #e78f29;
   padding-top: 34px;
   padding-bottom: 34px;
 
@@ -37,16 +37,14 @@
 .footer-link {
   display: flex;
   align-items: center;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Bowlby One SC', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
-  text-transform: uppercase;
-  color: #171035;
+  color: #1f2a37;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
-    font-size: 18px;
   }
 
   &:hover,
@@ -55,11 +53,11 @@
 }
 
 .footer-text {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #171035;
+  color: #1f2a37;
 
   @include media(desktop) {
     text-align: center;
