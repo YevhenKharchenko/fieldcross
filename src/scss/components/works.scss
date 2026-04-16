@@ -1,0 +1,30 @@
+.works-section {
+  padding-top: 80px;
+
+  @include media(desktop) {
+    padding-top: 160px;
+  }
+}
+
+.works-container {
+  @include media(desktop) {
+  }
+}
+
+.works-title {
+  @include media(desktop) {
+  }
+}
+
+.works-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.works-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}

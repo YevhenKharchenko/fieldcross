@@ -1,0 +1,123 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 160px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.features-text-wrapper {
+  @include media(desktop) {
+    display: grid;
+    grid-template-columns: 414px 412px;
+    grid-template-areas:
+      'title img'
+      'list img'
+      'text img';
+    align-items: center;
+    justify-content: center;
+    column-gap: 240px;
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+    text-align: left;
+    grid-area: title;
+  }
+}
+
+.features-img-wrapper {
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+    margin: 0;
+    grid-area: img;
+  }
+}
+
+.features-img {
+  @include media(desktop) {
+    min-width: 412px;
+  }
+}
+
+.features-text {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #97abdd;
+
+  @include media(desktop) {
+    text-align: left;
+    grid-area: text;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    align-items: start;
+    margin-bottom: 24px;
+    grid-area: list;
+  }
+}
+
+.features-list-item {
+  border: 1px solid #4fd1ff;
+  border-radius: 40px;
+  padding: 13px 17px;
+  max-width: max-content;
+
+  &:last-child {
+    padding: 13px 2px;
+  }
+
+  @include media(desktop) {
+    &:last-child {
+      padding: 13px 17px;
+    }
+  }
+}
+
+.features-item-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  color: #97abdd;
+
+  @include media(desktop) {
+  }
+}
