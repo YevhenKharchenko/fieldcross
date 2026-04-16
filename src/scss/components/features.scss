@@ -8,6 +8,7 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
     padding-top: 160px;
@@ -20,104 +21,63 @@
   }
 }
 
-.features-content-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.features-text-wrapper {
-  @include media(desktop) {
-    display: grid;
-    grid-template-columns: 414px 412px;
-    grid-template-areas:
-      'title img'
-      'list img'
-      'text img';
-    align-items: center;
-    justify-content: center;
-    column-gap: 240px;
-  }
-}
-
 .features-title {
   @include media(desktop) {
-    text-align: left;
-    grid-area: title;
   }
 }
 
-.features-img-wrapper {
-  max-width: max-content;
+.features-swiper-container {
+  max-width: 305px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 22px;
 
   @include media(desktop) {
-    margin: 0;
-    grid-area: img;
+    max-width: 1440px;
+  }
+}
+
+.features-swiper-container.show {
+  visibility: visible;
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+.features-slide {
+  width: 100% !important;
+  max-width: 305px;
+
+  @include media(desktop) {
+    max-width: 413px;
   }
 }
 
 .features-img {
-  @include media(desktop) {
-    min-width: 412px;
-  }
-}
-
-.features-text {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #97abdd;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
 
   @include media(desktop) {
-    text-align: left;
-    grid-area: text;
-  }
-}
-
-.features-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    align-items: start;
-    margin-bottom: 24px;
-    grid-area: list;
-  }
-}
-
-.features-list-item {
-  border: 1px solid #4fd1ff;
-  border-radius: 40px;
-  padding: 13px 17px;
-  max-width: max-content;
-
-  &:last-child {
-    padding: 13px 2px;
-  }
-
-  @include media(desktop) {
-    &:last-child {
-      padding: 13px 17px;
-    }
   }
 }
 
 .features-item-text {
-  font-family: 'Manrope', sans-serif;
+  padding: 0 20px;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-transform: uppercase;
   text-align: center;
-  color: #97abdd;
+  color: #1f2a37;
 
   @include media(desktop) {
+    padding: 0 70px;
   }
 }

@@ -1,9 +1,9 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-let gameplaySwiper;
+let featuresSwiper;
 
-gameplaySwiper = new Swiper('.gameplay-swiper-container', {
+featuresSwiper = new Swiper('.features-swiper-container', {
   direction: 'horizontal',
   loop: false,
   centeredSlides: true,
@@ -26,7 +26,7 @@ gameplaySwiper = new Swiper('.gameplay-swiper-container', {
   on: {
     init(swiper) {
       document
-        .querySelector('.gameplay-swiper-container')
+        .querySelector('.features-swiper-container')
         .classList.add('show');
     },
   },

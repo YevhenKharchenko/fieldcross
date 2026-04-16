@@ -1,0 +1,99 @@
+.mechanics-section {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/mechanics/mechanics-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 160px;
+    padding-bottom: 0;
+    max-width: 1440px;
+    background-image: url(../img/mechanics/mechanics-bg-desk.png);
+    background-position: bottom 22px center;
+  }
+}
+
+.mechanics-container {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 155px;
+    margin-left: 215px;
+  }
+}
+
+.mechanics-text-wrapper {
+  @include media(desktop) {
+    max-width: 385px;
+  }
+}
+
+.mechanics-title {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    min-width: 280px;
+  }
+}
+
+.mechanics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+  }
+}
+
+.mechanics-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.mechanics-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2a37;
+
+  @include media(desktop) {
+  }
+}
+
+.mechanics-text {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1f2a37;
+
+  @include media(desktop) {
+  }
+}

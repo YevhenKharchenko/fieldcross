@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://quietmarker.space/sitemap.xml
+Sitemap: https://fieldcross.online/sitemap.xml

@@ -8,67 +8,64 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/about/about-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top 200px center;
-  background-size: auto;
-  mix-blend-mode: lighten;
 
   @include media(desktop) {
-    padding-top: 186px;
+    padding-top: 160px;
     max-width: 1440px;
-    background-image: url(../img/about/about-bg-desk.png);
-    background-position: top 160px left 40px;
   }
 }
 
 .about-container {
+  padding: 0;
+
   @include media(desktop) {
   }
 }
 
 .about-content-wrapper {
   @include media(desktop) {
-    position: relative;
   }
 }
 
 .about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
   @include media(desktop) {
-    max-width: 630px;
-    margin-left: auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .about-title {
   @include media(desktop) {
-    text-align: left;
   }
 }
 
 .about-img {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 
   @include media(desktop) {
     margin: 0;
-    min-width: 330px;
-    position: absolute;
-    top: 0;
-    left: 174px;
+    min-width: 522px;
   }
 }
 
 .about-text {
-  font-family: 'Manrope', sans-serif;
+  padding: 0 20px;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  text-transform: uppercase;
-  color: #97abdd;
+  color: #1f2a37;
 
   @include media(desktop) {
+    padding: 0;
+    max-width: 520px;
   }
 }
 
